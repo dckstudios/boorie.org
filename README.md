@@ -28,3 +28,63 @@ Nuestra visión es crear el mejor agente de ingeniería hidráulica de IA de có
 - **Seguridad de nivel empresarial:** Próximamente, integración con soluciones de seguridad avanzadas para proteger las operaciones y datos gestionados por Boorie.
 
 Invitamos a los ingenieros hidráulicos y a los profesionales del sector a explorar las posibilidades que Boorie ofrece para la gestión avanzada de redes de agua, y a contribuir con su experiencia para mejorar continuamente esta herramienta de IA.
+
+**Contáctenos para sugerencias, preguntas o asistencia técnica**
+
+Estamos comprometidos en desarrollar Boorie para fortalecer las capacidades de los ingenieros hidráulicos mediante la integración de inteligencia artificial avanzada. Valoramos profundamente su retroalimentación y estamos interesados en aprender más sobre cómo están utilizando Boorie en sus proyectos. Esta información es crucial para nosotros, ya que guía la evolución y mejora de nuestras soluciones.
+
+Si tiene sugerencias sobre cómo podemos adaptar Boorie aún más a sus necesidades específicas, o si necesita asistencia con cualquier aspecto de su implementación, nos encantaría escucharlo. También estamos abiertos a discutir nuevas funcionalidades, integraciones o cualquier idea que pueda tener para extender las capacidades de Boorie en la gestión de redes de agua.
+
+Para facilitar este intercambio de ideas y brindarle el soporte que necesita, le invitamos a completar nuestra **Encuesta de Admisión de Casos de Uso de Boorie**. Esta encuesta está diseñada para capturar detalles específicos sobre su contexto de uso, desafíos enfrentados y sugerencias para mejoras o nuevas características. Su participación es invaluable y permitirá que Boorie se convierta en una herramienta aún más potente y ajustada a las necesidades reales de los ingenieros hidráulicos.
+
+**Cómo contactarnos:**
+
+- **Encuesta de Admisión:** Por favor, acceda a nuestra encuesta en línea a través del enlace proporcionado en nuestra página web o directamente desde los materiales de soporte de Boorie. Esta encuesta es su primer paso hacia una colaboración productiva, permitiéndonos entender mejor sus necesidades y cómo podemos satisfacerlas.
+  
+- **Soporte Directo:** Si prefiere una conversación directa o necesita asistencia inmediata, no dude en ponerse en contacto con nuestro equipo de soporte técnico. Estamos disponibles a través de email, teléfono, y también ofrecemos sesiones de chat en vivo para resolver sus dudas o problemas técnicos de manera eficiente.
+
+Su experiencia y retroalimentación son esenciales para nosotros. Juntos, podemos asegurar que Boorie no solo cumpla con las expectativas actuales, sino que también se anticipe y adapte a los desafíos futuros de la ingeniería hidráulica. Esperamos tener noticias suyas y trabajar juntos para mejorar la gestión de las redes de agua urbanas.
+
+**Últimas Actualizaciones en Boorie: Herramientas y Arquitectura**
+
+Boorie ahora incorpora capacidades avanzadas, permitiendo a los ingenieros hidráulicos acceder a herramientas especializadas, como la búsqueda en catálogos de infraestructuras hidráulicas y modelos de simulación. Gracias a la compatibilidad con LiteLLM, Boorie permite la integración de cualquier modelo de lenguaje, ya sea de código abierto o privativo, mejorando significativamente la flexibilidad y adaptabilidad de la plataforma para diversas aplicaciones en ingeniería hidráulica.
+
+**Configuración e Instalación:**
+
+Para comenzar con Boorie, asegúrate de tener Python versión 3.8 o superior, pero inferior a la 3.12:
+
+1. **Crea un entorno virtual** en tu computadora. Aunque utilizamos "env" como nombre predeterminado, puedes elegir el nombre que prefieras. Es importante recordar este nombre para referencias futuras en el entorno de trabajo.
+   
+   - **En Windows:** Usa el símbolo del sistema o PowerShell, navega al directorio de tu proyecto, crea y activa el entorno virtual.
+   
+   - **En Mac y sistemas Unix-like:** Abre la terminal, navega al directorio de tu proyecto, crea y activa el entorno virtual.
+
+2. **Clona el repositorio** de Boorie desde GitHub para acceder a los últimos desarrollos y actualizaciones.
+
+3. **Instalación:** Puedes instalar Boorie directamente desde PyPI para un uso rápido o clonar el repositorio para contribuir al desarrollo o personalizarlo a tus necesidades.
+
+**Ejemplo de Uso:**
+
+Para probar Boorie en tu entorno local, después de la instalación, ejecuta el script de ejemplo para familiarizarte con las capacidades y la configuración del agente.
+
+**Pruebas y Desinstalación:**
+
+- Asegúrate de probar tu configuración para confirmar que todo está funcionando correctamente. Las pruebas unitarias son cruciales para asegurar la estabilidad de Boorie.
+  
+- Para desinstalar Boorie y limpiar tu entorno de desarrollo, sigue los pasos proporcionados en la documentación, asegurando una eliminación limpia del entorno virtual y los archivos de configuración.
+
+**Despliegue:**
+
+Boorie puede ser desplegado utilizando FastAPI para demostraciones y pruebas en entornos de producción. Consulta la documentación específica para obtener instrucciones detalladas sobre el despliegue.
+
+**Documentación y Contribuciones:**
+
+La documentación de Boorie está inspirada en prácticas avanzadas de desarrollo de software y se beneficia de la contribución de la comunidad. La documentación incluye guías detalladas sobre configuración, personalización de agentes y desarrollo de nuevas funcionalidades.
+
+**Acerca del Equipo y Contribuciones:**
+
+El equipo detrás de Boorie está comprometido con el desarrollo y mantenimiento de esta plataforma avanzada. Alientan activamente las contribuciones de la comunidad, ya sea a través de feedback, sugerencias o contribuciones directas al código.
+
+Para aquellos interesados en contribuir o necesitar asistencia, los detalles de contacto y enlaces relevantes están disponibles, facilitando la colaboración y el soporte.
+
+Boorie continúa evolucionando con el objetivo de ofrecer la más avanzada herramienta de asistencia para ingenieros hidráulicos, mejorando la gestión y eficiencia de las redes de agua urbanas a través de la integración de tecnología de vanguardia en inteligencia artificial y modelado hidráulico.
