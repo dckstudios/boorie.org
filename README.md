@@ -1,4 +1,61 @@
 # boorie
+**Boorie Knowledge**
+
+This repository is an implementation of Boorie, an advanced hydraulic engineering agent that utilizes the WNTR tool and LLM to assist hydraulic engineers in improving and managing urban water networks. Boorie is context-aware, meaning it can understand at what stage of planning or problem-solving it is and act accordingly. Moreover, Boorie has access to a broad knowledge base in hydraulic engineering, significantly reducing the possibility of errors or "hallucinations" in its recommendations.
+
+Our vision is to create the best open-source AI hydraulic engineering agent, empowering engineers with smart tools for more efficient management of water networks. We are open to receiving more information about how Boorie is being used in your projects to guide the future development of the agent, so please do not hesitate to share your experiences with us.
+
+**Features:**
+
+- **Contextual Understanding:** Boorie is designed to understand at what stage a hydraulic engineering project is, with customizable stages according to your specific needs:
+  
+  - **Preliminary Assessment:** Begin analysis by identifying the needs and scope of the project.
+  - **Network Analysis:** Use WNTR to evaluate the existing water network and its capabilities.
+  - **Problem Identification:** Diagnose problems and areas for improvement in the water network.
+  - **Solution Design:** Propose solutions based on advanced analyses to address the identified challenges.
+  - **Optimization:** Fine-tune the proposed solutions to maximize efficiency and effectiveness.
+  - **Implementation:** Advise on the implementation of solutions in the water network.
+  - **Monitoring and Adjustment:** Offer strategies for continuous monitoring and adjustment of the network.
+- **Specialized Knowledge:** Direct access to advanced technical information and specific hydraulic engineering solutions, reducing errors and improving the accuracy of recommendations.
+
+- **Integration with LLM:** Thanks to integration with LLM technologies, you can choose any closed or open-source language model to work alongside Boorie, expanding its analysis and recommendation capabilities.
+
+- **Optimized for Efficiency:** Designed to offer recommendations in real-time, with low latency, ensuring smooth and efficient interaction.
+
+- **Human in the Loop:** For situations that require supervision or human intervention, ensuring that critical decisions are reviewed and validated.
+
+- **Enterprise-Level Security:** Coming soon, integration with advanced security solutions to protect the operations and data managed by Boorie.
+
+We invite hydraulic engineers and professionals in the field to explore the possibilities that Boorie offers for advanced management of water networks and to contribute their expertise to continuously improve this AI tool.
+
+**Contact Us for Suggestions, Questions, or Technical Support**
+
+We are committed to developing Boorie to enhance the capabilities of hydraulic engineers through the integration of advanced artificial intelligence. We deeply value your feedback and are interested in learning more about how you are using Boorie in your projects. This information is crucial for us, as it guides the evolution and improvement of our solutions.
+
+If you have suggestions on how we can further tailor Boorie to your specific needs, or if you need assistance with any aspect of its implementation, we would love to hear from you. We are also open to discussing new functionalities, integrations, or any ideas you might have to extend Boorie's capabilities in water network management.
+
+To facilitate this exchange of ideas and provide you with the support you need, we invite you to complete our Boorie Use Case Admission Survey. This survey is designed to capture specific details about your use context, challenges faced, and suggestions for improvements or new features. Your participation is invaluable and will enable Boorie to become an even more powerful tool tailored to the real needs of hydraulic engineers.
+
+**How to Contact Us:**
+
+- **Admission Survey:** Please access our online survey through the link provided on our website or directly from Boorie's support materials. This survey is your first step toward productive collaboration, allowing us to better understand your needs and how we can meet them.
+
+- **Direct Support:** If you prefer a direct conversation or need immediate assistance, do not hesitate to contact our technical support team. We are available via email, phone, and also offer live chat sessions to efficiently resolve your queries or technical issues.
+
+Your experience and feedback are essential to us. Together, we can ensure that Boorie not only meets current expectations but also anticipates and adapts to the future challenges of hydraulic engineering. We look forward to hearing from you and working together to improve the management of urban water networks.
+
+**Latest Updates in Boorie: Tools and Architecture**
+
+Boorie now incorporates advanced capabilities, allowing hydraulic engineers to access specialized tools, such as searching in catalogs of hydraulic infrastructures and simulation models. Thanks to compatibility with LiteLLM, Boorie enables the integration of any language model, whether open-source or proprietary, significantly enhancing the platform's flexibility and adaptability for various applications in hydraulic engineering.
+
+**Setup and Installation:**
+
+To get started with Boorie, make sure you have Python version 3.8 or higher, but lower than 3.12:
+
+- **Create a virtual environment** on your computer. Although we use "env" as the default name, you can choose whatever name you prefer.
+
+
+
 Boorie knowledge
 
 Este repositorio es una implementación de Boorie, un agente ingeniero hidráulico avanzado que utiliza la herramienta WNTR y LLM para asistir a ingenieros hidráulicos en la mejora y gestión de redes de agua urbanas. Boorie es consciente del contexto, lo que significa que puede comprender en qué etapa de la planificación o resolución de problemas se encuentra y actuar en consecuencia. Además, Boorie tiene acceso a una amplia base de conocimientos de ingeniería hidráulica, reduciendo significativamente la posibilidad de errores o "alucinaciones" en sus recomendaciones.
