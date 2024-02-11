@@ -54,7 +54,41 @@ To get started with Boorie, make sure you have Python version 3.8 or higher, but
 
 - **Create a virtual environment** on your computer. Although we use "env" as the default name, you can choose whatever name you prefer.
 
+ It's important to remember this name for future references in the working environment.
+  
+  - **On Windows:** Use the command prompt or PowerShell, navigate to your project directory, create, and activate the virtual environment.
+  
+  - **On Mac and Unix-like systems:** Open the terminal, navigate to your project directory, create, and activate the virtual environment.
 
+- **Clone the Boorie repository** from GitHub to access the latest developments and updates.
+
+- **Installation:** You can install Boorie directly from PyPI for quick use or clone the repository for development contributions or customization to your needs.
+
+**Example of Use:**
+
+To test Boorie in your local environment, after installation, run the example script to familiarize yourself with the agent's capabilities and setup.
+
+**Testing and Uninstallation:**
+
+- Make sure to test your setup to confirm everything is working correctly. Unit tests are crucial for ensuring Boorie's stability.
+
+- To uninstall Boorie and clean your development environment, follow the steps provided in the documentation, ensuring a clean removal of the virtual environment and configuration files.
+
+**Deployment:**
+
+Boorie can be deployed using FastAPI for demonstrations and testing in production environments. Consult the specific documentation for detailed instructions on deployment.
+
+**Documentation and Contributions:**
+
+Boorie's documentation is inspired by advanced software development practices and benefits from community contribution. The documentation includes detailed guides on configuration, agent customization, and the development of new functionalities.
+
+**About the Team and Contributions:**
+
+The team behind Boorie is committed to the development and maintenance of this advanced platform. They actively encourage community contributions, whether through feedback, suggestions, or direct code contributions.
+
+For those interested in contributing or needing assistance, contact details and relevant links are available, facilitating collaboration and support.
+
+Boorie continues to evolve with the goal of providing the most advanced assistance tool for hydraulic engineers, improving the management and efficiency of urban water networks through the integration of cutting-edge technology in artificial intelligence and hydraulic modeling.
 
 Boorie knowledge
 
