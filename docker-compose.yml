@@ -1,0 +1,105 @@
+version: '3.8'
+
+services:
+  boorie:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: boorie:latest
+    container_name: boorie_app
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://boorie:boorie_pass@postgres:5432/boorie_db
+      - REDIS_URL=redis://redis:6379/0
+      - BOORIE_ENV=development
+      - LOG_LEVEL=INFO
+    volumes:
+      - ./boorie:/app/boorie
+      - ./data:/app/data
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    networks:
+      - boorie_network
+
+  postgres:
+    image: postgres:15-alpine
+    container_name: boorie_postgres
+    environment:
+      - POSTGRES_DB=boorie_db
+      - POSTGRES_USER=boorie
+      - POSTGRES_PASSWORD=boorie_pass
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U boorie -d boorie_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - boorie_network
+
+  redis:
+    image: redis:7-alpine
+    container_name: boorie_redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - boorie_network
+
+  celery:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: boorie:latest
+    container_name: boorie_celery
+    command: celery -A boorie.tasks worker --loglevel=info
+    environment:
+      - DATABASE_URL=postgresql://boorie:boorie_pass@postgres:5432/boorie_db
+      - REDIS_URL=redis://redis:6379/0
+      - BOORIE_ENV=development
+    volumes:
+      - ./boorie:/app/boorie
+      - ./data:/app/data
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      - boorie_network
+
+  flower:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: boorie:latest
+    container_name: boorie_flower
+    command: celery -A boorie.tasks flower
+    ports:
+      - "5555:5555"
+    environment:
+      - REDIS_URL=redis://redis:6379/0
+    depends_on:
+      - redis
+      - celery
+    networks:
+      - boorie_network
+
+volumes:
+  postgres_data:
+  redis_data:
+
+networks:
+  boorie_network:
+    driver: bridge
